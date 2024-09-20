@@ -3,7 +3,8 @@ function App() {
   const todos=[
     "faire mes devoirs",
     "laver le linge",
-    "preparer le repas"
+    "preparer le repas",
+    "laver les moutons"
   ]
   return <>
 
