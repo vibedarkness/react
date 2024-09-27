@@ -1,0 +1,33 @@
+.favorite-dishes-carousel {
+    width: 100%;
+    overflow: hidden; /* Masquer tout ce qui dépasse */
+    padding: 10px;
+    box-sizing: border-box; /* Inclure le padding dans la largeur totale */
+    background-color: white;
+}
+
+.carousel-content {
+    display: flex; /* Affichage en ligne des items */
+    gap: 20px; /* Espacement entre les items */
+    transition: transform 0.5s ease; /* Transition fluide pour le défilement */
+}
+
+.carousel-item {
+    flex: 1; /* Ajustement des items pour qu'ils se répartissent également */
+    min-width: 200px; /* Largeur minimale des items */
+    text-align: center;
+}
+
+.dish-image {
+    width: 60px; /* Largeur de l'image */
+    height: 60px; /* Hauteur de l'image */
+    object-fit: cover;
+    border-radius: 50%; /* Images rondes */
+    margin-bottom: 10px;
+}
+
+/* Animation pour le carrousel - ajouter de la fluidité */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}

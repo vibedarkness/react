@@ -1,0 +1,103 @@
+.testimonials-section {
+    background-color: #f7f7f7; /* Couleur d'arrière-plan plus claire */
+    padding: 60px 0; /* Espacement généreux */
+    font-family: 'Open Sans', sans-serif; /* Police élégante et lisible */
+}
+
+.testimonials-carousel {
+    max-width: 750px; /* Un peu plus large pour l'alignement */
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background-color: white;
+    border: none;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Douce ombre pour la carte */
+    padding: 40px;
+    border-radius: 15px; /* Coins plus arrondis */
+    transition: transform 0.3s ease; /* Animation au survol */
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05); /* Légère mise en valeur au survol */
+}
+
+.image-container {
+    width: 100px; /* Image un peu plus grande */
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #ff8c00; /* Bordure plus épaisse et vibrante */
+}
+
+.testimonial-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Assurer que l'image remplit bien le conteneur */
+    border-radius: 50%;
+}
+
+.testimonial-card .quote {
+    font-style: italic;
+    font-size: 1.2rem; /* Taille de police légèrement augmentée */
+    color: #444; /* Couleur plus sombre pour une meilleure lisibilité */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.testimonial-card .quote:before {
+    content: "“"; /* Ajouter une grande guillemet ouvrante */
+    font-size: 3rem;
+    color: #ff8c00;
+    position: absolute;
+    left: -25px;
+    top: -10px;
+}
+
+.testimonial-card .quote:after {
+    content: "”"; /* Ajouter une grande guillemet fermante */
+    font-size: 3rem;
+    color: #ff8c00;
+    position: absolute;
+    right: -25px;
+    bottom: -10px;
+}
+
+.testimonial-card .card-title {
+    font-size: 1.3rem; /* Nom plus visible */
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    letter-spacing: 1px; /* Espacement pour donner plus de style */
+}
+
+.testimonial-card .role {
+    font-size: 0.95rem; /* Taille du rôle légèrement augmentée */
+    color: #888; /* Couleur grise plus douce */
+    margin-top: -10px;
+}
+
+h2 {
+    font-size: 2.2rem; /* Taille du titre augmentée */
+    color: #333; /* Couleur foncée pour le titre */
+    font-weight: bold;
+    margin-bottom: 40px; /* Espacement plus grand sous le titre */
+    text-align: center;
+    text-transform: uppercase; /* Texte en majuscules pour plus d'impact */
+    letter-spacing: 2px; /* Espacement entre les lettres */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Ombre subtile pour un effet de profondeur */
+    animation: fadeIn 1s ease-in-out; /* Animation légère d'apparition */
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,190 @@
+/* Styles pour la bannière du carousel */
+.carousel-banner {
+    position: relative;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    text-align: left;
+    width: 40%;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.carousel-caption h3 {
+    font-size: 2.5rem; /* Texte plus grand */
+    font-weight: bold;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 0, 0.7); /* Ombres brillantes */
+    margin-bottom: 20px;
+    font-family: 'Libre Baskerville', serif; /* Utilisation de la police souhaitée */
+    color: #242010; /* Couleur de texte brillante */
+    background: linear-gradient(90deg, pink, rgba(255, 255, 255, 0.3)); /* Dégradé */
+    padding: 10px 20px; /* Padding autour du texte */
+    border-radius: 10px; /* Coins arrondis */
+    text-align: center; /* Centre le texte */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Effet de transition pour hover */
+    
+}
+
+/* Effet au survol */
+.carousel-caption h3:hover {
+    transform: scale(1.05); /* Agrandissement léger au survol */
+    opacity: 0.9; /* Légère transparence */
+}
+
+
+.carousel-banner img,
+.carousel-banner video {
+    height: 600px; /* Hauteur augmentée pour plus de visibilité */
+    object-fit: cover;
+    width: 100%;
+    filter: brightness(80%); /* Assombrir légèrement pour améliorer la visibilité du texte */
+}
+
+@media (max-width: 768px) {
+    .carousel-caption {
+        width: 90%; /* Plus de largeur pour le texte sur mobile */
+        left: 5%; /* Ajustement de la position */
+    }
+
+    .carousel-caption h3 {
+        font-size: 1.8rem; /* Réduction de la taille du texte */
+    }
+
+    .carousel-banner img,
+    .carousel-banner video {
+        height: 300px; /* Hauteur réduite pour petits écrans */
+    }
+}
+
+/* Contenu principal */
+.main-content {
+    display: flex; /* Flexbox pour aligner la barre de recherche et les cartes */
+    flex-direction: column; /* Empile la barre de recherche et les cartes verticalement */
+    padding: 50px 20px; /* Ajoute du padding */
+    gap: 20px; /* Espace entre les éléments de la section principale */
+}
+
+/* Barre de recherche */
+/* Barre de recherche */
+.search-bar {
+    display: flex;
+    justify-content: center; /* Centre la barre de recherche */
+    width: 100%;
+    max-width: 800px; /* Limite la largeur maximale de la barre de recherche */
+    margin: 0 auto; /* Centre la barre de recherche même sur les grands écrans */
+}
+
+.search-input {
+    flex: 1; /* Permet à l'input de prendre tout l'espace disponible */
+}
+
+/* Media queries pour différents écrans */
+@media (max-width: 1200px) {
+    .search-bar {
+        max-width: 90%; /* Réduit la largeur maximale pour les écrans moyens */
+    }
+}
+
+@media (max-width: 768px) {
+    .search-bar {
+        max-width: 100%; /* Pleine largeur sur petits écrans */
+        padding: 0 10px; /* Ajoute un padding pour éviter que la barre touche les bords */
+    }
+
+    .search-input {
+        height: 50px; /* Ajustement de la hauteur de l'input pour mobiles */
+    }
+}
+
+@media (max-width: 480px) {
+    .search-input {
+        font-size: 0.9rem; /* Réduction de la taille de la police pour petits écrans */
+        height: 40px; /* Ajustement de la hauteur de l'input pour petits écrans */
+    }
+
+    .dropdown-button {
+        font-size: 0.9rem; /* Réduction de la taille de la police pour le bouton du dropdown */
+    }
+}
+
+
+
+/* Cartes des plats */
+.dish-cards {
+    display: flex;
+    flex-direction: column; /* Affiche les éléments en colonne */
+    padding: 20px;
+    width: 100%;
+}
+
+.dish-cards h2 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Cartes individuelles */
+.dish-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.dish-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+    text-align: center;
+}
+
+/* Titre des cartes */
+.dish-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Media queries pour petits écrans */
+@media (max-width: 768px) {
+    .dish-cards {
+        padding: 10px;
+        gap: 10px; /* Espace réduit entre les cartes */
+    }
+
+    .dish-card {
+        width: 100%; /* Les cartes prennent toute la largeur sur mobile */
+        margin-bottom: 20px; /* Espace entre chaque carte */
+    }
+
+    .card-img-top {
+        height: 150px; /* Ajustement de la hauteur pour petits écrans */
+    }
+
+    .dish-title {
+        font-size: 1.2rem; /* Texte plus petit pour mobile */
+    }
+}

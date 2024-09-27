@@ -1,0 +1,151 @@
+.dishd-detail-page {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: #fdfdfd;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.dishd-detail-page:hover {
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.dishd-card-detail {
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.dishd-image {
+    border-radius: 15px;
+    max-height: 450px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.dishd-title {
+    font-size: 2.8rem;
+    color: #333;
+    text-align: center;
+    text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    font-family: 'Georgia', serif;
+    text-transform: capitalize;
+}
+
+.dishd-cooking-time {
+    font-size: 1.2rem;
+    color: #555;
+    font-weight: bold;
+    text-align: center;
+}
+
+.dishd-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.dishd-ingredients-section, .dishd-steps-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.dishd-subtitle {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.dishd-ingredients, .dishd-steps {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+    list-style: none;
+    padding: 0;
+}
+
+.ingredient-item, .step-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.ingredient-icon, .step-icon {
+    color: #3498db;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.comment-section {
+    margin-top: 40px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.comment-section h4 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+}
+
+.comment-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.comment-item {
+    background-color: #eef;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    color: #333;
+    transition: transform 0.3s ease-in-out;
+}
+
+.comment-item:hover {
+    transform: scale(1.02);
+    background-color: #e0f7fa;
+}
+
+.comment-form {
+    margin-top: 30px;
+}
+
+.comment-form textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.comment-form button {
+    float: right;
+    padding: 10px 20px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.comment-form button:hover {
+    background-color: #2980b9;
+}
+
+.error-text {
+    color: red;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 20px;
+}

@@ -1,0 +1,57 @@
+/* Centrer le formulaire et ajouter des styles modernes */
+.login-container {
+    height: 100vh;
+    background-image: url('https://img.freepik.com/photos-gratuite/restauration-rapide-belle-delicieuse_23-2149333955.jpg?size=626&ext=jpg&ga=GA1.1.1364775884.1715591630&semt=ais_hybrid'); /* Remplacez par le chemin de votre image */
+    background-size: cover; /* Couvre tout l'écran */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Évite la répétition de l'image */
+}
+
+.login-box {
+    background-color: rgba(255, 255, 255, 0.8); /* Utilisation d'un fond blanc avec opacité pour le formulaire */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.input-field {
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #ff6f61;
+}
+
+button {
+    background-color: #ff6f61;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff9d81;
+}
+
+.alert {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+/* styles.css */
+.custom-primary {
+    background-color: #ff6f61; /* Rose */
+    border-color: #ff6f61; /* Rose */
+    color: white; /* Texte blanc */
+}
+
+.custom-primary:hover {
+    background-color: #ff9d81; /* Couleur de survol */
+    border-color: #ff9d81; /* Couleur de bordure au survol */
+}
+
